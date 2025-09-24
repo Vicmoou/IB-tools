@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - IB Tools</title>
+    <link rel="stylesheet" href="TemperatureConverter.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <a href="Home.html">Home</a>
+            <a href="Tools.html">Tools</a>
+            <a href="AboutUs.html">About Us</a>
+        </nav>
+
+        <h1 class="page-title">Temperature Converter</h1>
+
+        <div class="converter-container">
+            <div class="input-group">
+                <label for="celsius">Celsius (°C)</label>
+                <div class="input-wrapper">
+                    <input type="number" id="celsius" placeholder="Enter temperature">
+                    <button class="copy-button" onclick="copyValue('celsius')">Copy</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="fahrenheit">Fahrenheit (°F)</label>
+                <div class="input-wrapper">
+                    <input type="number" id="fahrenheit" placeholder="Enter temperature">
+                    <button class="copy-button" onclick="copyValue('fahrenheit')">Copy</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="kelvin">Kelvin (K)</label>
+                <div class="input-wrapper">
+                    <input type="number" id="kelvin" placeholder="Enter temperature">
+                    <button class="copy-button" onclick="copyValue('kelvin')">Copy</button>
+                </div>
+            </div>
+
+            <div class="formula-box">
+                <h3>Conversion Formulas:</h3>
+                <ul>
+                    <li>Celsius to Fahrenheit: °F = (°C × 9/5) + 32</li>
+                    <li>Celsius to Kelvin: K = °C + 273.15</li>
+                    <li>Fahrenheit to Celsius: °C = (°F - 32) × 5/9</li>
+                    <li>Fahrenheit to Kelvin: K = (°F - 32) × 5/9 + 273.15</li>
+                    <li>Kelvin to Celsius: °C = K - 273.15</li>
+                    <li>Kelvin to Fahrenheit: °F = (K - 273.15) × 9/5 + 32</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="TemperatureConverter.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - IB Tools</title>
+    <link rel="stylesheet" href="IB-tools.css">
+    <!-- 
+    Calculator Page
+    This page contains the calculator tool for basic arithmetic operations.
+    Created: September 24, 2025
+    -->
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Tools.html">Tools</a>
+            <a href="AboutUs.html">About Us</a>
+        </nav>
+
+        <div class="calculator-wrapper">
+            <div class="calculator">
+                <h1 class="page-title">Advanced Calculator</h1>
+                <div class="display">
+                    <input type="text" id="result" readonly>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+                    <button class="btn btn-backspace" onclick="deleteLast()">⌫</button>
+                    <button class="btn btn-operator btn-divide" onclick="appendToDisplay('/')">/</button>
+                    <button class="btn btn-operator btn-multiply" onclick="appendToDisplay('*')">*</button>
+                    
+                    <button class="btn btn-number btn-seven" onclick="appendToDisplay('7')">7</button>
+                    <button class="btn btn-number btn-eight" onclick="appendToDisplay('8')">8</button>
+                    <button class="btn btn-number btn-nine" onclick="appendToDisplay('9')">9</button>
+                    <button class="btn btn-operator btn-subtract" onclick="appendToDisplay('-')">-</button>
+                    
+                    <button class="btn btn-number btn-four" onclick="appendToDisplay('4')">4</button>
+                    <button class="btn btn-number btn-five" onclick="appendToDisplay('5')">5</button>
+                    <button class="btn btn-number btn-six" onclick="appendToDisplay('6')">6</button>
+                    <button class="btn btn-operator btn-add" onclick="appendToDisplay('+')">+</button>
+                    
+                    <button class="btn btn-number btn-one" onclick="appendToDisplay('1')">1</button>
+                    <button class="btn btn-number btn-two" onclick="appendToDisplay('2')">2</button>
+                    <button class="btn btn-number btn-three" onclick="appendToDisplay('3')">3</button>
+                    <button class="btn btn-equals" onclick="calculate()">=</button>
+                    
+                    <button class="btn btn-number btn-zero" onclick="appendToDisplay('0')">0</button>
+                    <button class="btn btn-number btn-decimal" onclick="appendToDisplay('.')">.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="IB-tools.js"></script>
+</body>
+</html>

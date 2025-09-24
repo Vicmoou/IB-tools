@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    color: #2d3436;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #2d3436;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background: #228be6;
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main-title {
+    font-size: 2.5em;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #636e72;
+    margin: 0;
+}
+
+/* Tools Grid */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-icon {
+    background: #f8f9fa;
+    padding: 30px;
+    text-align: center;
+}
+
+.tool-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.tool-content {
+    padding: 25px;
+}
+
+.tool-content h2 {
+    margin: 0 0 15px;
+    color: #2d3436;
+}
+
+.tool-content p {
+    color: #636e72;
+    margin-bottom: 20px;
+}
+
+.tool-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.tool-features li {
+    padding: 8px 0;
+    color: #636e72;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tool-features li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #228be6;
+}
+
+.tool-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #228be6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.tool-button:hover {
+    background: #1c7ed6;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.coming-soon h2 {
+    color: #2d3436;
+    margin-bottom: 15px;
+}
+
+.coming-soon p {
+    color: #636e72;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #636e72;
+}
