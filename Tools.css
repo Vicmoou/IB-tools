@@ -82,10 +82,9 @@ header {
     text-align: center;
 }
 
-.tool-icon img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+.tool-icon i {
+    font-size: 70px;
+    color: #228be6;
 }
 
 .tool-content {

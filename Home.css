@@ -59,9 +59,10 @@ header {
 }
 
 .nav-icon {
-    width: 32px;
-    height: 32px;
+    font-size: 28px;
     margin-bottom: 8px;
+    color: #228be6;
+    width: 32px; /* Keep alignment */
 }
 
 /* Features Section */
@@ -96,9 +97,9 @@ header {
 }
 
 .feature-icon {
-    width: 64px;
-    height: 64px;
+    font-size: 56px;
     margin-bottom: 20px;
+    color: #228be6;
 }
 
 .feature-card h3 {
